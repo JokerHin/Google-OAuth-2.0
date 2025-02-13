@@ -5,8 +5,7 @@ console.log(VITE_PROJECT_ID, VITE_ENDPOINT);
 
 const client = new Client()
   .setEndpoint(VITE_ENDPOINT)
-  .setProject(VITE_PROJECT_ID)
-  .setMode("no-cors"); // Add this line to set the request's mode to 'no-cors'
+  .setProject(VITE_PROJECT_ID);
 
 const account = new Account(client);
 
